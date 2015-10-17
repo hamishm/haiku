@@ -40,7 +40,9 @@ for architectureObject in [ MultiArchSubDirSetup ] {
 			SubDirC++Flags -std=c++1y ;
 
 			asyncSources =
-				EventLoop.cpp ;
+				EventLoop.cpp
+				ServerSocket.cpp
+				StreamSocket.cpp ;
 		} else {
 			asyncSources = ;
 		}
